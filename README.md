@@ -26,4 +26,3 @@ colonnes
 * conso_eclairage_ep
 * conso_auxiliaires_ep
 * cout_total_5_usages
-* 
