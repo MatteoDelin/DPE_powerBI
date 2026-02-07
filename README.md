@@ -67,15 +67,15 @@ Les données proviennent de l'API de l'ADEME (Diagnostic de Performance Énergé
 
 ---
 
-## Livrables du Projet
+## Contenu du repository
 
 Conformément au cahier des charges de GreenTech Solutions :
 
-* **Application Power BI** : Déployée sur Power BI Online.
-* **Fichier Source** : `TDB Enedis.pbix` présent dans ce repository.
+* **Tableau de bord** : `TDB Enedis.pbix` présent dans ce repository.
 * **Documentation Technique** : Schéma du modèle, règles RLS et diagnostic de performance.
 * **Documentation Fonctionnelle** : Guide utilisateur expliquant les visuels et filtres.
-* **Captation Vidéo** : Démo de l'application publiée en non répertorier sur YouTube.
+* **Dataset** : dossier contenant le CSV source  du rapport
+* **Dossier code** : dossier contenant les codes ayant permis la récupération des données
 
 ---
 
