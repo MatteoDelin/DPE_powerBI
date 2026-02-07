@@ -39,31 +39,31 @@ Les données proviennent de l'API de l'ADEME (Diagnostic de Performance Énergé
 
 | Colonne | Type | Description |
 | :--- | :--- | :--- |
-| `numero\_dpe` | String | Identifiant unique du diagnostic |
-| `date\_etablissement\_dpe` | String | Date de réalisation du diagnostic |
-| `etiquette\_dpe` | String | Classe énergétique du logement (A à G) |
-| `type\_batiment` | String | Type de bâtiment (Maison ou Appartement) |
-| `annee\_construction` | Numeric | Année de construction du logement |
-| `surface\_habitable\_logement`| Numeric | Surface habitable en m² |
-| `adresse\_ban` | String | Adresse issue de la Base Adresse Nationale |
-| `type\_energie\_n1` | String | Type d'énergie principale |
-| `conso\_chauffage\_ef` | Numeric | Consommation chauffage (Énergie Finale) |
-| `conso\_ecs\_ef` | Numeric | Consommation Eau Chaude Sanitaire (EF) |
-| `conso\_refroidissement\_ef` | Numeric | Consommation refroidissement (EF) |
-| `conso\_eclairage\_ef` | Numeric | Consommation éclairage (EF) |
-| `conso\_auxiliaires\_ef` | Numeric | Consommation auxiliaires (EF) |
-| `conso\_chauffage\_ep` | Numeric | Consommation chauffage (Énergie Primaire) |
-| `conso\_ecs\_ep` | Numeric | Consommation Eau Chaude Sanitaire (EP) |
-| `conso\_refroidissement\_ep` | Numeric | Consommation refroidissement (EP) |
-| `conso\_eclairage\_ep` | Numeric | Consommation éclairage (EP) |
-| `conso\_auxiliaires\_ep` | Numeric | Consommation auxiliaires (EP) |
-| `cout\_chauffage` | Numeric | Coût annuel estimé pour le chauffage |
-| `cout\_ecs` | Numeric | Coût annuel estimé pour l'ECS |
-| `cout\_refroidissement` | Numeric | Coût annuel estimé pour le refroidissement |
-| `cout\_eclairage` | Numeric | Coût annuel estimé pour l'éclairage |
-| `cout\_auxiliaires` | Numeric | Coût annuel estimé pour les auxiliaires |
-| `coordonnee\_cartographique\_x\_ban` | Numeric | latitude du logement |
-| `coordonnee\_cartographique\_y\_ban` | Numeric | longitude x du logement |
+| `numero_dpe` | String | Identifiant unique du diagnostic |
+| `date_etablissement_dpe` | String | Date de réalisation du diagnostic |
+| `etiquette_dpe` | String | Classe énergétique du logement (A à G) |
+| `type_batiment` | String | Type de bâtiment (Maison ou Appartement) |
+| `annee_construction` | Numeric | Année de construction du logement |
+| `surface_habitable_logement`| Numeric | Surface habitable en m² |
+| `adresse_ban` | String | Adresse issue de la Base Adresse Nationale |
+| `type_energie_n1` | String | Type d'énergie principale |
+| `conso_chauffage_ef` | Numeric | Consommation chauffage (Énergie Finale) |
+| `conso_ecs_ef` | Numeric | Consommation Eau Chaude Sanitaire (EF) |
+| `conso_refroidissement\_ef` | Numeric | Consommation refroidissement (EF) |
+| `conso_eclairage_ef` | Numeric | Consommation éclairage (EF) |
+| `conso_auxiliaires_ef` | Numeric | Consommation auxiliaires (EF) |
+| `conso_chauffage_ep` | Numeric | Consommation chauffage (Énergie Primaire) |
+| `conso_ecs_ep` | Numeric | Consommation Eau Chaude Sanitaire (EP) |
+| `conso_refroidissement_ep` | Numeric | Consommation refroidissement (EP) |
+| `conso_eclairage_ep` | Numeric | Consommation éclairage (EP) |
+| `conso_auxiliaires_ep` | Numeric | Consommation auxiliaires (EP) |
+| `cout_chauffage` | Numeric | Coût annuel estimé pour le chauffage |
+| `cout_ecs` | Numeric | Coût annuel estimé pour l'ECS |
+| `cout_refroidissement` | Numeric | Coût annuel estimé pour le refroidissement |
+| `cout_eclairage` | Numeric | Coût annuel estimé pour l'éclairage |
+| `cout_auxiliaires` | Numeric | Coût annuel estimé pour les auxiliaires |
+| `coordonnee_cartographique_x_ban` | Numeric | latitude du logement |
+| `coordonnee_cartographique_y_ban` | Numeric | longitude x du logement |
 
 ---
 
