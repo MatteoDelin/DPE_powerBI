@@ -1,71 +1,83 @@
 # Projet Power BI : État des Lieux Énergétique (DPE)
+
 ## Focus : Alpes-Maritimes (06)
 
 ## À propos du projet
+
 Face à l'accélération du changement climatique et à la hausse des prix de l'énergie, la sobriété énergétique est au cœur des préoccupations des Français. À la demande d'**Enedis**, la société de service **GreenTech Solutions** a établi un état des lieux de la performance énergétique des logements du département des **Alpes-Maritimes**.
 
 **Problématique :** *Quelles axes d'améliorations peut-on mettre en place, à travers l'analyse de la situation énergétique dans le département des Alpes Maritimes ?*
 
 Notre approche se décompose en trois phases :
+
 1. **Synthèse de la consommation :** Étude globale des indicateurs énergétiques du département.
 2. **Comparaison Intercommunale :** Observation des disparités entre les diverses villes.
-3. **Rapport Décisionnel :** Assemblage des axes d'observations pour répondre à la problématique.
+3. **Analyse poussée :** Etude des indicateur plus en profondeur pour chaque DPE afin de trouvé les cause de disparité.
+
+
+
+**Lien vidéo YouTube** : \_\_\_\_
+
+**Lien du Tableau de bord en ligne** : \_\_\_\_
+
+
 
 ---
 
-## Spécifications Techniques & Données
+## Spécifications Techniques \& Données
 
 ### Source des données
+
 Les données proviennent de l'API de l'ADEME (Diagnostic de Performance Énergétique).
 
-**URL de requête (Département 06) :**
+* DPE existant : https://data.ademe.fr/datasets/dpe03existant
+* DPE neuf : https://data.ademe.fr/datasets/dpe02neuf
 
-https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?code_departement_ban_eq=06&select=numero_dpe%2Cdate_etablissement_dpe%2Cetiquette_dpe%2Ctype_batiment%2Cannee_construction%2Csurface_habitable_logement%2Cadresse_ban%2Cconso_chauffage_ep%2Cconso_ecs_ep%2Cconso_refroidissement_ep%2Cconso_eclairage_ep%2Cconso_auxiliaires_ep%2Cconso_chauffage_ef%2Cconso_ecs_ef%2Cconso_refroidissement_ef%2Cconso_eclairage_ef%2Cconso_auxiliaires_ef%2Ccout_chauffage%2Ccout_ecs%2Ccout_refroidissement%2Ccout_eclairage%2Ccout_auxiliaires
+---
 
 ### Dictionnaire des colonnes utilisées
+
 | Colonne | Type | Description |
 | :--- | :--- | :--- |
-| `numero_dpe` | String | Identifiant unique du diagnostic |
-| `date_etablissement_dpe` | String | Date de réalisation du diagnostic |
-| `etiquette_dpe` | String | Classe énergétique du logement (A à G) |
-| `type_batiment` | String | Type de bâtiment (Maison ou Appartement) |
-| `annee_construction` | Numeric | Année de construction du logement |
-| `surface_habitable_logement`| Numeric | Surface habitable en m² |
-| `adresse_ban` | String | Adresse issue de la Base Adresse Nationale |
-| `type_energie_n1` | String | Type d'énergie principale |
-| `conso_chauffage_ef` | Numeric | Consommation chauffage (Énergie Finale) |
-| `conso_ecs_ef` | Numeric | Consommation Eau Chaude Sanitaire (EF) |
-| `conso_refroidissement_ef` | Numeric | Consommation refroidissement (EF) |
-| `conso_eclairage_ef` | Numeric | Consommation éclairage (EF) |
-| `conso_auxiliaires_ef` | Numeric | Consommation auxiliaires (EF) |
-| `conso_chauffage_ep` | Numeric | Consommation chauffage (Énergie Primaire) |
-| `conso_ecs_ep` | Numeric | Consommation Eau Chaude Sanitaire (EP) |
-| `conso_refroidissement_ep` | Numeric | Consommation refroidissement (EP) |
-| `conso_eclairage_ep` | Numeric | Consommation éclairage (EP) |
-| `conso_auxiliaires_ep` | Numeric | Consommation auxiliaires (EP) |
-| `cout_chauffage` | Numeric | Coût annuel estimé pour le chauffage |
-| `cout_ecs` | Numeric | Coût annuel estimé pour l'ECS |
-| `cout_refroidissement` | Numeric | Coût annuel estimé pour le refroidissement |
-| `cout_eclairage` | Numeric | Coût annuel estimé pour l'éclairage |
-| `cout_auxiliaires` | Numeric | Coût annuel estimé pour les auxiliaires |
+| `numero\_dpe` | String | Identifiant unique du diagnostic |
+| `date\_etablissement\_dpe` | String | Date de réalisation du diagnostic |
+| `etiquette\_dpe` | String | Classe énergétique du logement (A à G) |
+| `type\_batiment` | String | Type de bâtiment (Maison ou Appartement) |
+| `annee\_construction` | Numeric | Année de construction du logement |
+| `surface\_habitable\_logement`| Numeric | Surface habitable en m² |
+| `adresse\_ban` | String | Adresse issue de la Base Adresse Nationale |
+| `type\_energie\_n1` | String | Type d'énergie principale |
+| `conso\_chauffage\_ef` | Numeric | Consommation chauffage (Énergie Finale) |
+| `conso\_ecs\_ef` | Numeric | Consommation Eau Chaude Sanitaire (EF) |
+| `conso\_refroidissement\_ef` | Numeric | Consommation refroidissement (EF) |
+| `conso\_eclairage\_ef` | Numeric | Consommation éclairage (EF) |
+| `conso\_auxiliaires\_ef` | Numeric | Consommation auxiliaires (EF) |
+| `conso\_chauffage\_ep` | Numeric | Consommation chauffage (Énergie Primaire) |
+| `conso\_ecs\_ep` | Numeric | Consommation Eau Chaude Sanitaire (EP) |
+| `conso\_refroidissement\_ep` | Numeric | Consommation refroidissement (EP) |
+| `conso\_eclairage\_ep` | Numeric | Consommation éclairage (EP) |
+| `conso\_auxiliaires\_ep` | Numeric | Consommation auxiliaires (EP) |
+| `cout\_chauffage` | Numeric | Coût annuel estimé pour le chauffage |
+| `cout\_ecs` | Numeric | Coût annuel estimé pour l'ECS |
+| `cout\_refroidissement` | Numeric | Coût annuel estimé pour le refroidissement |
+| `cout\_eclairage` | Numeric | Coût annuel estimé pour l'éclairage |
+| `cout\_auxiliaires` | Numeric | Coût annuel estimé pour les auxiliaires |
+
+| `coordonnee\_cartographique\_x\_ban | Numeric | latitude du logement |
+
+| `coordonnee\_cartographique\_y\_ban | Numeric | longitude x du logement |
 
 ---
 
 ## Livrables du Projet
+
 Conformément au cahier des charges de GreenTech Solutions :
+
 * **Application Power BI** : Déployée sur Power BI Online.
-* **Fichier Source** : `powerbi.pbix` présent dans ce repository.
-* **Documentation Technique** : Schéma du modèle, règles RLS et diagnostic de performance (2 pages max).
-* **Documentation Fonctionnelle** : Guide utilisateur expliquant les visuels et filtres (2 pages max).
-* **Captation Vidéo** : Démo de l'application publiée en privé sur YouTube.
+* **Fichier Source** : `TDB Enedis.pbix` présent dans ce repository.
+* **Documentation Technique** : Schéma du modèle, règles RLS et diagnostic de performance.
+* **Documentation Fonctionnelle** : Guide utilisateur expliquant les visuels et filtres.
+* **Captation Vidéo** : Démo de l'application publiée en non répertorier sur YouTube.
 
 ---
 
-## Équipe et Rôles
-Projet réalisé en équipe SD2. Chaque étudiant a assuré les trois rôles durant le cycle de développement :
-* **Chef de projet** : Planification et coordination.
-* **UX/UI** : Conception de la maquette (Canva) et interface utilisateur.
-* **Data Analyst** : Nettoyage (Power Query), modélisation et mesures DAX.
-
-**Client :** Mathieu Gaultier  
-**Date limite de rendu :** 08/02/2026
